@@ -93,13 +93,13 @@
     <div class="wad-btn-container">
       <input type="hidden" id="hiddenbutton" value="Round-Trip">
       <div class="wad-column-button">
-        <button class="wad-compare-button">One Way</button>
+        <button class="wad-compare-button" id="onewaybutton">One Way</button>
       </div>
       <div class="wad-column-button">
-        <button class="wad-compare-button">Round Trip</button>
+        <button class="wad-compare-button" id="roundtripbutton">Round Trip</button>
       </div>
       <div class="wad-column-button">
-        <button class="wad-compare-button">Multi-City</button>
+        <button class="wad-compare-button" id="multicitybutton">Multi-City</button>
       </div>
     </div>
   </div>
@@ -134,12 +134,12 @@
         </div>
         <div>
           <img src="./utils/images/route.svg" alt="" class="icon">
-          <input type="search1" id="departure" placeholder="Departure" autocomplete="off">
+          <input type="search1" id="departure" placeholder="Depart From" autocomplete="off">
         </div>
 
         <div>
           <img src="./utils/images/route.svg" alt="" class="icon">
-          <input type="search2" id="arrival" placeholder="Arrival" autocomplete="off">
+          <input type="search2" id="arrival" placeholder="Arrival To" autocomplete="off">
         </div>
 
         <div>
@@ -188,12 +188,12 @@
           <div class="col-md-6">
             <div class="wad-form-input ">
               <img src="./utils/images/route.svg" alt="" class="icon1">
-              <input style="width: 77%" id="departure-mob" type="text" placeholder="Depart" autocomplete="off"
+              <input style="width: 77%" id="departure-mob" type="text" placeholder="Depart From" autocomplete="off"
                 required />
             </div>
             <div class="wad-form-input">
               <img src="./utils/images/route.svg" alt="" class="icon2">
-              <input style="width: 77%" id="arrival-mob" type="text" placeholder="Arrival" autocomplete="off"
+              <input style="width: 77%" id="arrival-mob" type="text" placeholder="Arrival To" autocomplete="off"
                 required />
             </div>
             <div class="wad-form-input">

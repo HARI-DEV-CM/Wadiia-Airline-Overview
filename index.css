@@ -583,6 +583,7 @@ select.account {
   }
   
   
+  
   .hamburger {
     display: flex;
     position: absolute;
@@ -2425,6 +2426,8 @@ position: relative;
 
 /* autocomplete airport */
 
+/*Extra CSS start */
+
 .ui-autocomplete {
   max-height: 200px;
   overflow-y: auto;
@@ -2475,6 +2478,8 @@ input::-webkit-calendar-picker-indicator {
   border-width: thin;
 }
 
-#roundtripbutton {
-  outline: 1px solid blue;
+.wad-button-clicked {
+  box-shadow: inset 0px 0px 15px 0px rgb(200 211 207) !important;
 }
+
+/*Extra CSS Stop */
