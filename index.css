@@ -2005,14 +2005,20 @@ hr.line {
     align-items: center;
   }
   input[type="number"] {
-    padding-left: 73px !important;
+    padding-left: 71px !important;
     outline: none;
     height: 48.98px;
     padding-bottom: 0;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 
   input[type="text"] {
-    padding-left: 73px !important;
+    padding-left: 71px !important;
     outline: none;
     padding-bottom: 0;
   }
@@ -2024,15 +2030,16 @@ hr.line {
     top: 22px !important;
     left: 75px;
   }
+
+
   input[type="number"] {
-    padding-left: 73px;
+    padding-left: 73px !important;
     outline: none;
-    height: 48.98px;
     padding-bottom: 0;
   }
 
   input[type="text"] {
-    padding-left: 73px;
+    padding-left: 73px !important;
     outline: none;
     padding-bottom: 0;
   }
