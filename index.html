@@ -96,7 +96,7 @@
         <button class="wad-compare-button" id="onewaybutton">One Way</button>
       </div>
       <div class="wad-column-button">
-        <button class="wad-compare-button" id="roundtripbutton">Round Trip</button>
+        <button class="wad-compare-button wad-button-clicked" id="roundtripbutton">Round Trip</button>
       </div>
       <div class="wad-column-button">
         <button class="wad-compare-button" id="multicitybutton">Multi-City</button>
@@ -132,31 +132,41 @@
           <input type="radio" id="Multi-Trip" value="Multi-Trip" name="radio-button">
           <label for="Multi-Trip">Multi Trip</label>
         </div>
-        <div>
+        <div class="inputField searchfield">
           <img src="./utils/images/route.svg" alt="" class="icon">
-          <input type="search1" id="departure" placeholder="Depart From" autocomplete="off">
+          <input type="search1" id="departure" placeholder=" " autocomplete="off">
+          <span>Depart From</span>
         </div>
-
-        <div>
+        <div class="inputField searchfield">
           <img src="./utils/images/route.svg" alt="" class="icon">
-          <input type="search2" id="arrival" placeholder="Arrival To" autocomplete="off">
+          <input type="search2" id="arrival" placeholder=" " autocomplete="off">
+          <span>Arrival To</span>
         </div>
-
         <div>
-          <img src="./utils/images/calendar (1).svg" alt="" class="icon">
-          <input type="search" id="departure-date" placeholder="Departure Date" autocomplete="off">&nbsp;
-          <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
-          <input type="search" id="arrival-date" placeholder="Arrival Date"
-            autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <img src="./utils/images/group.svg" alt="" class="icon">
-          <input type="number" min="1" id="travellers" placeholder="No of Travellers" autocomplete="off">
-          <img src="./utils/images/airplane.svg" alt="" class="icon">
-          <input type="search" placeholder="Airline class" id="class" list="journeyclass" autocomplete="off"
-            onfocus="this.value=''" onchange="this.blur();">
-          <datalist id="journeyclass">
-            <option value="Business">
-            <option value="Economy">
-          </datalist>
+          <div class="inputField date-search">
+            <img src="./utils/images/calendar (1).svg" alt="" class="icon">
+            <input type="search" id="departure-date" placeholder=" " autocomplete="off">&nbsp;
+            <span>Departure Date</span>
+          </div>
+          <div class="inputField date-search">
+            <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
+            <input type="search" id="arrival-date" placeholder=" " autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Arrival Date</span>
+          </div>
+          <div class="inputField date-search">
+            <img src="./utils/images/group.svg" alt="" class="icon">
+            <input type="number" min="1" id="travellers" placeholder=" " autocomplete="off">
+            <span>No of Travellers</span>
+          </div>
+          <div class="inputField date-search">
+            <img src="./utils/images/airplane.svg" alt="" class="icon">
+            <input type="search" placeholder=" " id="class" list="journeyclass"  autocomplete="off" onfocus="this.value=''" onchange="this.blur();">
+            <span>Airline class</span>
+            <datalist id="journeyclass">
+              <option value="Business">
+              <option value="Economy">
+            </datalist>
+          </div>
         </div>
         <button class="wad-btn-submit" type="submit">Search Flight </button>
       </form>
@@ -184,56 +194,56 @@
   <div class="wad-form-container-mob">
     <form onsubmit="redirectMobURL(); getcmsmob(); return false">
       <div class="wad-form-mob">
-        <div class="wad-form-tab row">
+        <div class="wad-form-tab row" >
           <div class="col-md-6">
-            <div class="wad-form-input ">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/route.svg" alt="" class="icon1">
-              <input style="width: 77%" id="departure-mob" type="text" placeholder="Depart From" autocomplete="off"
-                required />
+              <input style="width: 77%" id="departure-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Depart From</span>
             </div>
-            <div class="wad-form-input">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/route.svg" alt="" class="icon2">
-              <input style="width: 77%" id="arrival-mob" type="text" placeholder="Arrival To" autocomplete="off"
-                required />
+              <input style="width: 77%" id="arrival-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Arrival To</span>
             </div>
-            <div class="wad-form-input">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/group.svg" alt="" class="icon5">
-              <input style="width: 77%" type="number" min="1" id="travellers-mob"
-                placeholder="No.Of. Travellers" autocomplete="off" required />
+              <input style="width: 77%" type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off" required/>
+              <span>No.of. Travellers</span>
             </div>
           </div>
-
+          
           <div class="col-md-6">
-            <div class="wad-form-input">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/calendar (1).svg" alt="" class="icon3">
-              <input style="width: 77%" id="departure-date-mob" type="text" placeholder="Depart Date" autocomplete="off"
-                required />
+              <input style="width: 77%" id="departure-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Depart Date</span>
             </div>
-            <div class="wad-form-input">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/calendar (1).svg" alt="" class="icon4" id="arrival-icon-mob">
-              <input style="width: 77%" id="arrival-date-mob" type="text" placeholder="Arrival Date" autocomplete="off"
-                required />
+              <input style="width: 77%" id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Arrival Date</span>
             </div>
-            <div class="wad-form-input">
+            <div class="wad-form-input inputField">
               <img src="./utils/images/airplane.svg" alt="" class="icon6">
-              <input style="width: 77%" type="text" id="class-mob" list="journeyclass-mob" placeholder="Airline Class"
-                autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required />
-              <datalist id="journeyclass-mob">
-                <option value="Business">
-                <option value="Economy">
-              </datalist>
+              <input style="width: 77%" type="text" id="class-mob" list="journeyclass-mob" placeholder=" " autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required/>
+              <span>Airline Class</span>
+            <datalist id="journeyclass-mob">
+              <option value="Business">
+              <option value="Economy">
+            </datalist>
             </div>
-          </div>
+          </div>  
         </div>
       </div>
       <!-- <div class="wad-form-sub-buttons">
-      <div>
-        <p>Non stop flights</p>
-      </div>
-      <div>
-        <p>Add another Traveller</p>
-      </div>
-    </div> -->
+        <div>
+          <p>Non stop flights</p>
+        </div>
+        <div>
+          <p>Add another Traveller</p>
+        </div>
+      </div> -->
       <button class="wad-search-flight-btn" onclick='redirectMobURL()'>
         Search Flight
       </button>
@@ -276,33 +286,33 @@
 
       </div>
       <br />
-      <div style="display: flex">
+      <div class="wad-container-mango-img">
         <div class="wad-otherInfo-details-left">
           <div class="wad-general-info-container">
-            <h5><object data="./utils/images/Group_14.svg"
-                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IATA Code: JE</h5>
+            <p><object data="./utils/images/Group_14.svg"
+                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IATA Code: JE</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
-            <h5><object data="./utils/images/Group_14.svg"
+            <p><object data="./utils/images/Group_14.svg"
                 type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub Airport: O.R. Tambo
-              International</h5>
+              International</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
-            <h5><object data="./utils/images/Group_14.svg"
+            <p><object data="./utils/images/Group_14.svg"
                 type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loyality Program:
-              Voyager</h5>
+              Voyager</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
-            <h5><object data="./utils/images/Group_14.svg"
+            <p><object data="./utils/images/Group_14.svg"
                 type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflight Magazine:
-              Mango Juice</h5>
+              Mango Juice</p>
           </div>
         </div>
         <div class="wad-otherInfo-details-right">
-          <img src="./utils/images/mango.png" />
+          <img class="wad-mango-img" src="./utils/images/mango.png" />
           <div style="display: flex; margin-top: 42px;">
             <p>Airline Star Rating:</p>
             <span style="display: flex; width: 19px;
@@ -342,7 +352,7 @@
         <p>Mango Airlines is one of the South Areica’s youngest low cost domestic carriers. Launched in 206. It’s a
           government owned airline and subsidiary of SAA (South Arica Airways). It’s catchy marketing and cheap ticket
           prices has made quite a positive impact the South Arican Airline sector, and it has since become a household
-          name aslociated with cheap flights in South Africa. Mango Airlines’ head ofice is READ MORE> <a href='#'>READ
+          name aslociated with cheap flights in South Africa. Mango Airlines’ head ofice is <a href='#'>READ
             MORE></a></p>
       </div>
     </div>
@@ -427,6 +437,8 @@
       </div>
     </div>
   </div>
+  <!-- Top Mango Route Section starts -->
+
   <div class="wad-top-mango-container">
     <div class="wad-top-mango-route">
       <div class="wad-top-mango-heading">
@@ -446,7 +458,10 @@
               type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;JNB</p>
           <p style="color: #336699;">45 Minutes</p>
           <p style="color: #336699;">6:16 PM</p>
-          <p>From R950 <br /><button class="wad-search-buttonz">Search Flight</button></p>
+          <div class="mango-search-button">
+            <p>From R950</p>
+            <button class="wad-search-buttonz">Search Flight</button>
+          </div>
         </div>
         <hr />
         <div class="wad-mango-table-heading">
@@ -454,7 +469,10 @@
               type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;DUR</p>
           <p style="color: #336699;">45 Minutes</p>
           <p style="color: #336699;">6:16 PM</p>
-          <p>From R950 <br /><button class="wad-search-buttonz">Search Flight</button></p>
+          <div class="mango-search-button">
+            <p>From R950</p>
+            <button class="wad-search-buttonz">Search Flight</button>
+          </div>
         </div>
         <hr />
         <div class="wad-mango-table-heading">
@@ -462,7 +480,10 @@
               type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;JNB</p>
           <p style="color: #336699;">45 Minutes</p>
           <p style="color: #336699;">6:16 PM</p>
-          <p>From R950 <br /><button class="wad-search-buttonz">Search Flight</button></p>
+          <div class="mango-search-button">
+            <p>From R950</p>
+            <button class="wad-search-buttonz">Search Flight</button>
+          </div>
         </div>
         <hr />
         <button class="wad-mango-load-button">LOAD MORE</button></p>
@@ -470,6 +491,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Top Mango Route Section Ends -->
 
   <div class="wad-airlines-row">
     <h2>Alternative Airlines to Mango Airlines</h2>
