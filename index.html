@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wadiia</title>
+  <title>Overview</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,24 +17,19 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- funtionality -->
-
+  <!-- functionality -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
-
 </head>
 
 <body onload="addAccordianEventListener()">
-
   <div class="hamburger">
     <div class="hamburger-line1"></div>
     <div class="hamburger-line2"></div>
     <div class="hamburger-line3"></div>
   </div>
-
-
   <ul class="menu">
     <div class="hamburger-close">
       <span class="close">&times;</span>
@@ -52,13 +47,8 @@
       <a class="menuLink" href="#">My Account</a>
     </li>
   </ul>
-
-
-  <!-- HAMBURGER  END -->
-
   <div class="wad-search-row">
     <div class="wad-row">
-      <!-- <p>Wadiia</p> -->
       <object data="./utils/images/logo.svg" type="image/svg+xml" style="width:137.5px; height: 53.5px;"></object>
     </div>
     <div class="wad-column-head">
@@ -80,9 +70,6 @@
     </div>
   </div>
   <div class="wad-nav-mob">
-    <!-- <div>
-      <img src="./utils/images/route.svg" alt="" class="icon">
-    </div> -->
     <div class="wad-row-mob">
       <object data="./utils/images/logo.svg" type="image/svg+xml"></object>
     </div>
@@ -118,13 +105,13 @@
     <br />
     <div class="wad-pageroutes">
       <div class="wad-routeheading">
-        <h2>Book Cheap Mango Flights</h2>
+        <h2>Book Mango Flights from Durban to Johannesburg</h2>
       </div>
     </div>
     <br />
     <div class="wad-searchbox">
       <form onsubmit="redirectURL(); getcms(); return false">
-        <div id="radio" class="wad-radio-button">
+        <div id="radio">
           <input type="radio" id="One-Way" value="One-Way" name="radio-button">
           <label for="One-Way">One Way</label>
           <input type="radio" id="Round-Trip" value="Round-Trip" name="radio-button" checked="checked" required>
@@ -150,7 +137,8 @@
           </div>
           <div class="inputField date-search">
             <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
-            <input type="search" id="arrival-date" placeholder=" " autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="search" id="arrival-date" placeholder=" "
+              autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span id="spanarrival">Arrival Date</span>
           </div>
           <div class="inputField date-search">
@@ -160,7 +148,8 @@
           </div>
           <div class="inputField date-search">
             <img src="./utils/images/airplane.svg" alt="" class="icon">
-            <input type="search" placeholder=" " id="class" list="journeyclass"  autocomplete="off" onfocus="this.value=''" onchange="this.blur();">
+            <input type="search" placeholder=" " id="class" list="journeyclass" autocomplete="off"
+              onfocus="this.value=''" onchange="this.blur();">
             <span>Airline class</span>
             <datalist id="journeyclass">
               <option value="Business">
@@ -168,7 +157,9 @@
             </datalist>
           </div>
         </div>
-        <button class="wad-btn-submit" type="submit">Search Flight </button>
+        <button class="wad-search-flight-btn-desktop" type="submit">
+          Search Flight
+        </button>
       </form>
 
       <div class="wad-qbox">
@@ -190,60 +181,64 @@
         </ul>
       </div>
     </div>
+
   </div>
   <div class="wad-form-container-mob">
     <form onsubmit="redirectMobURL(); getcmsmob(); return false">
       <div class="wad-form-mob">
-        <div class="wad-form-tab row" >
+        <div class="wad-form-tab row">
           <div class="col-md-6">
             <div class="wad-form-input inputField">
               <img src="./utils/images/route.svg" alt="" class="icon1">
-              <input style="width: 77%" id="departure-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <input style="width: 77%" id="departure-mob" type="text" placeholder=" " autocomplete="off" required />
               <span>Depart From</span>
             </div>
             <div class="wad-form-input inputField">
               <img src="./utils/images/route.svg" alt="" class="icon2">
-              <input style="width: 77%" id="arrival-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <input style="width: 77%" id="arrival-mob" type="text" placeholder=" " autocomplete="off" required />
               <span>Arrival To</span>
             </div>
             <div class="wad-form-input inputField">
               <img src="./utils/images/group.svg" alt="" class="icon5">
-              <input style="width: 77%" type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off" required/>
+              <input style="width: 77%" type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off"
+                required />
               <span>No.of. Travellers</span>
             </div>
           </div>
-          
+
           <div class="col-md-6">
             <div class="wad-form-input inputField">
               <img src="./utils/images/calendar (1).svg" alt="" class="icon3">
-              <input style="width: 77%" id="departure-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <input style="width: 77%" id="departure-date-mob" type="text" placeholder=" " autocomplete="off"
+                required />
               <span>Depart Date</span>
             </div>
             <div class="wad-form-input inputField">
               <img src="./utils/images/calendar (1).svg" alt="" class="icon4" id="arrival-icon-mob">
-              <input style="width: 77%" id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <input style="width: 77%" id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required />
               <span id="spanarrivalmob">Arrival Date</span>
             </div>
             <div class="wad-form-input inputField">
               <img src="./utils/images/airplane.svg" alt="" class="icon6">
-              <input style="width: 77%" type="text" id="class-mob" list="journeyclass-mob" placeholder=" " autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required/>
+              <input style="width: 77%" type="text" id="class-mob" list="journeyclass-mob" placeholder=" "
+                autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required />
               <span>Airline Class</span>
-            <datalist id="journeyclass-mob">
-              <option value="Business">
-              <option value="Economy">
-            </datalist>
+              <datalist id="journeyclass-mob">
+                <option value="Business">
+                <option value="Economy">
+              </datalist>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
       <!-- <div class="wad-form-sub-buttons">
-        <div>
-          <p>Non stop flights</p>
-        </div>
-        <div>
-          <p>Add another Traveller</p>
-        </div>
-      </div> -->
+          <div>
+            <p>Non stop flights</p>
+          </div>
+          <div>
+            <p>Add another Traveller</p>
+          </div>
+        </div> -->
       <button class="wad-search-flight-btn" onclick='redirectMobURL()'>
         Search Flight
       </button>
@@ -272,11 +267,14 @@
       </div>
     </div>
   </div>
-
   <div class="wad-content-container">
     <h2>Book Cheap Mango Flights & Specials</h2>
     <br />
-    <p>Mango Airlines is one of the South Areica’s youngest low cost domestic carriers. Launched in 206. It’s a government owned airline and subsidiary of SAA (South Arica Airways). It’s catchy marketing and cheap ticket prices has made quite a positive impact the South Arican Airline sector, and it has since become a household name aslociated with cheap flights in South Africa. Mango Airlines’ head ofice is at Or Tambo International Airport in Kempton Part, Gauteng, on the mazzanine level of the Domestic Department Terminal.</p>
+    <p>Mango Airlines is one of the South Areica’s youngest low cost domestic carriers. Launched in 206. It’s a
+      government owned airline and subsidiary of SAA (South Arica Airways). It’s catchy marketing and cheap ticket
+      prices has made quite a positive impact the South Arican Airline sector, and it has since become a household
+      name aslociated with cheap flights in South Africa. Mango Airlines’ head ofice is at Or Tambo International
+      Airport in Kempton Part, Gauteng, on the mazzanine level of the Domestic Department Terminal.</p>
   </div>
   <div class="wad-queries">
     <div class="wad-queries-info">
@@ -290,24 +288,28 @@
         <div class="wad-otherInfo-details-left">
           <div class="wad-general-info-container">
             <p><object data="./utils/images/Group_14.svg"
-                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IATA Code: JE</p>
+                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IATA Code:
+              JE</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
             <p><object data="./utils/images/Group_14.svg"
-                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub Airport: O.R. Tambo
+                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hub
+              Airport: O.R. Tambo
               International</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
             <p><object data="./utils/images/Group_14.svg"
-                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loyality Program:
+                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loyality
+              Program:
               Voyager</p>
           </div>
           <div style="width: 10px; height: 10px;"></div>
           <div class="wad-general-info-container">
             <p><object data="./utils/images/Group_14.svg"
-                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflight Magazine:
+                type="image/svg+xml"></object>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflight
+              Magazine:
               Mango Juice</p>
           </div>
         </div>
@@ -316,7 +318,7 @@
           <div style="display: flex; margin-top: 42px;">
             <p>Airline Star Rating:</p>
             <span style="display: flex; width: 19px;
-                height: 18px; margin-left: 10px;">
+                    height: 18px; margin-left: 10px;">
               <img src="./utils/images/Path 106761.svg" />
               <img src="./utils/images/Path 106761.svg" />
               <img src="./utils/images/Path 106761.svg" />
@@ -332,7 +334,7 @@
       <div class="wad-start-mob">
         <p>Airline Star Rating:</p>
         <span style="display: flex; width: 19px;
-            height: 18px; margin-left: 10px;">
+                height: 18px; margin-left: 10px;">
           <img src="./utils/images/Path 106761.svg" />
           <img src="./utils/images/Path 106761.svg" />
           <img src="./utils/images/Path 106761.svg" />
@@ -349,9 +351,12 @@
       </div>
       <div class="wad-info-content">
         <br />
-        <p>Mango Airlines is one of the South Areica’s youngest low cost domestic carriers. Launched in 206. It’s a
-          government owned airline and subsidiary of SAA (South Arica Airways). It’s catchy marketing and cheap ticket
-          prices has made quite a positive impact the South Arican Airline sector, and it has since become a household
+        <p>Mango Airlines is one of the South Areica’s youngest low cost domestic carriers. Launched in 206.
+          It’s a
+          government owned airline and subsidiary of SAA (South Arica Airways). It’s catchy marketing and
+          cheap ticket
+          prices has made quite a positive impact the South Arican Airline sector, and it has since become a
+          household
           name aslociated with cheap flights in South Africa. Mango Airlines’ head ofice is <a href='#'>READ
             MORE></a></p>
       </div>
@@ -365,9 +370,11 @@
         <br />
         <p>Mango airlines is one of the South Arica's youngest low cost domestic carriers. Launched in 206. It's
           government
-          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket prices has
+          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket
+          prices has
           made
-          quite positive impact the South Arican Airline sector, and it has since become a household name associated
+          quite positive impact the South Arican Airline sector, and it has since become a household name
+          associated
           with
           cheap flights in South Africa. Mango Airline's head office is <a href='#'>READ MORE></a></p>
       </div>
@@ -381,9 +388,11 @@
         <br />
         <p>Mango airlines is one of the South Arica's youngest low cost domestic carriers. Launched in 206. It's
           government
-          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket prices has
+          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket
+          prices has
           made
-          quite positive impact the South Arican Airline sector, and it has since become a household name associated
+          quite positive impact the South Arican Airline sector, and it has since become a household name
+          associated
           with
           cheap flights in South Africa. Mango Airline's head office is <a href='#'>READ MORE></a></p>
       </div>
@@ -397,9 +406,11 @@
         <br />
         <p>Mango airlines is one of the South Arica's youngest low cost domestic carriers. Launched in 206. It's
           government
-          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket prices has
+          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket
+          prices has
           made
-          quite positive impact the South Arican Airline sector, and it has since become a household name associated
+          quite positive impact the South Arican Airline sector, and it has since become a household name
+          associated
           with
           cheap flights in South Africa. Mango Airline's head office is <a href='#'>READ MORE></a></p>
       </div>
@@ -413,9 +424,11 @@
         <br />
         <p>Mango airlines is one of the South Arica's youngest low cost domestic carriers. Launched in 206. It's
           government
-          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket prices has
+          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket
+          prices has
           made
-          quite positive impact the South Arican Airline sector, and it has since become a household name associated
+          quite positive impact the South Arican Airline sector, and it has since become a household name
+          associated
           with
           cheap flights in South Africa. Mango Airline's head office is <a href='#'>READ MORE></a></p>
       </div>
@@ -429,9 +442,11 @@
         <br />
         <p>Mango airlines is one of the South Arica's youngest low cost domestic carriers. Launched in 206. It's
           government
-          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket prices has
+          owned airline and subsidiary of SAA(South Arica Airways). It's catchy marketing and cheap ticket
+          prices has
           made
-          quite positive impact the South Arican Airline sector, and it has since become a household name associated
+          quite positive impact the South Arican Airline sector, and it has since become a household name
+          associated
           with
           cheap flights in South Africa. Mango Airline's head office is <a href='#'>READ MORE></a></p>
       </div>
@@ -493,10 +508,11 @@
   </div>
 
   <!-- Top Mango Route Section Ends -->
+  <!-- alternative airlines section starts -->
 
   <div class="wad-airlines-row">
     <h2>Alternative Airlines to Mango Airlines</h2>
-    <div class="wad-airlines-column" >
+    <div class="wad-airlines-column">
       <h3 style="font-weight: bold;">Airlines</h3>
       <hr class="wad-line">
       <p style="float: left;">South Africa Airways</p><button class="wad-search-button" style="float: right;">Search
@@ -513,9 +529,8 @@
       <p style="float: left;">Airlinks</p><button class="wad-search-button" style="float: right;">Search
         Flights</button>
       <br>
-      <hr class="wad-line">
     </div>
-    <div class="wad-airlines-column" >
+    <div class="wad-airlines-column" style="margin-right: -1.5vw;">
       <h3 style="font-weight: bold;">Airlines</h3>
       <hr class="wad-line">
       <p style="float: left;">British Airways</p><button class="wad-search-button" style="float: right;">Search
@@ -532,24 +547,24 @@
       <p style="float: left;">South African Express</p><button class="wad-search-button" style="float: right;">Search
         Flights</button>
       <br>
-      <hr class="wad-line">
     </div>
   </div>
-
+  <!-- FAQ Section starts -->
+  <!-- FAQ Section starts -->
 
   <div class='wad-faq'>
     <div class="wad-container-faq">
-      <h2 id="faqHeading">Frequently Asked Questions - Mango Flight</h2>
+      <h2 id="faqHeading">Frequently Asked Questions - Mango Flight From Durban to Johannesburg</h2>
       <div class="wad-faq-qa" id="faqContainer">
-        <button class="accordion1">What airport do you fly from for flights from Durban to Johannesburg ?<i
+        <button class="accordion1">What airplort do you fly from for flights from Durban to Johannesburg?<i
             class="fa fa-plus" aria-hidden="true"></i></button>
         <div class="panel1">
-          <p>If you took a flight to Johannesburg from Durban , you will be flying from KingShaka Intl, which is the
-            cities only airport . Durban KingShaka Intl(DUR) is located 29.2 km from the center of Durban. There are 28
-            Flight from KingShaka Intl to Johannesburg per day from six different airlines </p>
+          <p>If you took a flight to Johannesburg from Durban, you will be fighing from King Shaka Intl, which is teh
+            city’s only airport. Durban King Shaka Intl (DUR) is located 29.2 km from the center of Durban.There are 28
+            Flight from King Shaka Intl to Johannesburg per day from 6 different arilines.</p>
         </div>
 
-        <button class="accordion1">How far in distance should i book tickets from Durban to Johannesburg ?<i
+        <button class="accordion1">How far in distance sholuld I book tickets from Durban to Johannesburg?<i
             class="fa fa-plus" aria-hidden="true"></i></button>
         <div class="panel1">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -557,14 +572,14 @@
             ea commodo consequat.</p>
         </div>
 
-        <button class="accordion1">Are there last-minute flights available from Durban to Johannesburg ?<i
+        <button class="accordion1">Are there last-minute flights available from Durban to Johannesburg for under R600?<i
             class="fa fa-plus" aria-hidden="true"></i></button>
         <div class="panel1">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
         </div>
-        <button class="accordion1">How long is the flight from Durban to Johannesburg ?<i class="fa fa-plus"
+        <button class="accordion1">How long is the flight from Durban to Johannesburg?<i class="fa fa-plus"
             aria-hidden="true"></i></button>
         <div class="panel1">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -575,29 +590,37 @@
     </div>
   </div>
 
-  <div style="margin-top: 50px;">
-    <h2>Easy Steps For Booking</h2>
-  </div>
-  <div class="wad-faq-cards">
-    <div class="wad-faq-card1">
-      <h5><img src="./utils/images/Group 5.svg" alt="" style="width: 35px !important">&nbsp;
-        How to book the cheapest flights</h5>
-      <p>With Wadiia.com you'll get low prices and flexible booking options search and book now search and compare
-        low-cost flights on wadiia.com you won't miss a cheap flight deal again. Search and book now. </p>
-    </div>
-    <div class="wad-faq-card2">
-      <h5><img src="./utils/images/Group 6.svg" alt="" style="width: 35px !important">&nbsp;
-        Flexible cancellation<br /></h5>
-      <p>Flexible cancellation is allowed. Waiving of change fees. Search flexible flights from Cape Town to
-        Johannesburg </p>
-    </div>
-    <div class="wad-faq-card3">
-      <h5><img src="./utils/images/warning.svg" alt="" style="width: 35px !important">&nbsp;
-        How to book the cheapest flights</h5>
-      <p>The COVID-19 (coronavirus) outbreak may impact travel to Johannesburg from major cities across South Africa</p>
-    </div>
-  </div>
+  <!-- FAQ Section Ends -->
 
+  <!-- FAQ Cards Section Starts -->
+
+  <div>
+    <div style="margin-top: 30px;">
+      <h2>Easy Steps For Booking</h2>
+    </div>
+    <div class="wad-faq-cards">
+
+      <div class="wad-faq-card1">
+        <h5><img src="./utils/images/Group 5.svg" alt="" style="width: 35px !important">&nbsp;
+          How to book the cheapest flights</h5>
+        <p>With Wadiia.com you'll get low prices and flexible booking options search and book now search and compare
+          low-cost flights on wadiia.com you won't miss a cheap flight deal again. Search and book now. </p>
+      </div>
+      <div class="wad-faq-card2">
+        <h5><img src="./utils/images/Group 6.svg" alt="" style="width: 35px !important">&nbsp;
+          Flexible cancellation<br /></h5>
+        <p>Flexible cancellation is allowed. Waiving of change fees. Search flexible flights from Cape Town to
+          Johannesburg </p>
+      </div>
+      <div class="wad-faq-card3">
+        <h5><img src="./utils/images/warning.svg" alt="" style="width: 35px !important">&nbsp;
+          How to book the cheapest flights</h5>
+        <p>The COVID-19 (coronavirus) outbreak may impact travel to Johannesburg from major cities across South Africa
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Starts  -->
 
   <div class="footer-image">
     <img class="footer-img" src="./utils/images/footer-bg.png">
@@ -804,24 +827,21 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="./components/Hamburger/Hamburger.js"> </script>
-  <script type="text/javascript" src="./components/accordian/accordian.js"></script>
 
+  <!-- Footer Ends -->
 
   <script src="./index.js"></script>
-  <!-- <script>
-    const result=document.getElementsByClassName("");
-    console.log(result[0]);
-  </script> -->
+  <script type="text/javascript" src="./components/accordian/accordian.js"></script>
+  <script type="text/javascript" src="./components/hamburger/hamburger.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script> -->
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
 </body>
 
