@@ -33,8 +33,12 @@ h1 {
   text-align: center;
 }
 
-h1 {
+
+h2 {
+  font-size: 30px !important;
   color: #336699;
+  font-weight: bold !important;
+  text-align: center;
 }
 
 body {
@@ -69,6 +73,10 @@ li {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+.wad-row object {
+  width: 137.5px;
+  height: 53.5px;
 }
 
 .wad-column-head {
@@ -170,7 +178,7 @@ select.account {
   align-items: center;
 }
 
-.wad-pageroutes h1 {
+.wad-pageroutes h2 {
   color: #336699;
 }
 
@@ -206,6 +214,10 @@ select.account {
 .wad-qbox p {
   font-size: 22px;
   font-weight: 500;
+}
+
+.wad-qbox-li {
+  margin-left: 48px;
 }
 
 .wad-qbox li {
@@ -380,7 +392,7 @@ input[type="radio"] {
   color: #90a4bf;
 }
 
-input[type="search1"] {
+input[type="search2"] {
   border-radius: 5px;
   padding: 12px 10px 0px 71px;
   width: 780px;
@@ -393,7 +405,7 @@ input[type="search1"] {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-input[type="search1"] {
+input[type="search2"] {
   border-radius: 5px;
   padding: 12px 10px 0px 71px;
   width: 780px;
@@ -480,9 +492,12 @@ input[type="submit"] {
   color: #336699;
   font-weight: 500;
 }
+.wad-search-input {
+  width: 77%;
+}
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-  h1 {
+  h2 {
     font-size: 26px !important;
     margin: auto 60px !important;
   }
@@ -981,12 +996,12 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 480px) {
-  h1 {
+  h2 {
     font-size: 20px !important;
     margin-left: 16px !important;
     margin-right: 16px !important;
   }
-  h1 {
+  h2 {
     font-size: 20px !important;
   }
   .wad-row-button {
@@ -1141,7 +1156,7 @@ input[type="submit"] {
   margin-right: 150px;
   padding-top: 35px;
 }
-.wad-content-container h1 {
+.wad-content-container h2 {
   color: #245489;
   font-weight: 700;
   font-size: 30px;
@@ -1161,6 +1176,10 @@ input[type="submit"] {
   padding: 9px 9px 9px 9px;
   color: white;
   font-size: 22px;
+}
+.wad-general-info-wrap {
+  width: 10px;
+  height: 10px;
 }
 .wad-general-info button:focus {
   background-color: none;
@@ -1265,6 +1284,18 @@ hr {
   margin: 32px 16px;
 }
 
+.wad-airline-rating {
+  display: flex;
+  margin-top: 42px;
+}
+
+.wad-airline-rating-img {
+  display: flex;
+  width: 19px;
+  height: 18px;
+  margin-left: 10px;
+}
+
 .wad-queries-info {
   margin-top: 50px;
   margin-left: 135px;
@@ -1325,7 +1356,7 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .wad-content-container h1 {
+  .wad-content-container h2 {
     font-size: 25px;
   }
   .wad-content-container p {
@@ -1362,7 +1393,7 @@ hr {
     margin-right: 32px;
     margin-bottom: -65px;
   }
-  .wad-general-info-container{
+  .wad-general-info-container {
     width: 550px;
   }
 }
@@ -1423,6 +1454,12 @@ hr {
     margin-left: -70px;
     font-weight: 500;
   }
+  .wad-airline-rating-img-mob {
+    display: flex;
+    width: 19px;
+    height: 18px;
+    margin-left: 10px;
+  }
 }
 
 /* Top Mango Route Section starts */
@@ -1460,6 +1497,9 @@ hr {
   padding: 15px 0px 10px 0px;
   font-size: 20px;
   font-weight: 500;
+}
+.wad-mango-table-content {
+  color: #336699;
 }
 
 .wad-search-buttonz {
@@ -1600,12 +1640,21 @@ hr {
   display: table;
   clear: both;
 }
+.wad-top-airlines-heading {
+  font-weight: bold;
+}
+.wad-top-airlines-content {
+  float: left;
+}
 .wad-airlines-column {
   float: left;
   width: 50%;
   padding: 20px 50px;
 }
-.wad-airlines-column h2 {
+/* .wad-airlines-inline-column{
+  margin-right: -1.5vw;
+} */
+.wad-airlines-column h3 {
   font-size: 20px;
   color: #336699;
 }
@@ -1624,6 +1673,7 @@ hr.wad-line {
   font-size: 15px;
   margin: -8px 0px 0px 0px;
   cursor: pointer;
+  float: right;
 }
 .wad-airlines-column h3 {
   font-size: 20px;
@@ -1637,7 +1687,7 @@ hr.wad-line {
   .wad-airlines-row {
     margin: 40px 16px 0 16px;
   }
-  .wad-airlines-row > h1 {
+  .wad-airlines-row > h2 {
     margin-bottom: 40px;
   }
   .wad-airlines-column {
@@ -1671,7 +1721,7 @@ hr.wad-line {
     margin: 18px 0;
   }
 
-  .wad-airlines-row > .wad-airlines-column:nth-of-type(2) > h2 {
+  .wad-airlines-row > .wad-airlines-column:nth-of-type(2) > h3 {
     display: none;
   }
   .wad-airlines-row {
@@ -1701,11 +1751,17 @@ hr.wad-line {
   text-align: center;
   margin-top: 100px;
 }
+.wad-faq-card-wrap {
+  margin-top: 30px;
+}
+.wad-faq-card-img {
+  width: 35px !important;
+}
 
 .wad-container-faq {
   margin: 40px 168px;
 }
-.wad-container-faq h1 {
+.wad-container-faq h2 {
   color: #245489;
   font-weight: 600;
   font-size: 30px;
@@ -1782,12 +1838,12 @@ hr.wad-line {
     margin: 8px 16px 4px 16px !important;
   }
 
-  .wad-container-faq h1 {
+  .wad-container-faq h2 {
     font-size: 18px;
     margin-bottom: 8px;
   }
 
-  .wad-faq h1 {
+  .wad-faq h2 {
     font-size: 18px;
     margin-bottom: 8px;
     margin-top: 30px;
@@ -1936,6 +1992,10 @@ hr.wad-line {
 
 /* Footer Starts  */
 
+.wad-footer-container {
+  display: flex;
+}
+
 .footer-image {
   display: flex;
   justify-content: center;
@@ -2075,7 +2135,25 @@ hr.wad-line {
   font-size: 12px;
   color: #245489;
 }
-
+.footer-logo-spacing {
+  letter-spacing: 12px;
+}
+.footer-logo-images {
+  width: 28px;
+  height: 28px;
+}
+.footer-logo-secure-img {
+  width: 52px;
+  height: 20px;
+}
+.footer-logo-secure-img2 {
+  width: 52px;
+  height: 16px;
+}
+.footer-logo-secure-img3 {
+  width: 52px;
+  height: 26px;
+}
 .footer-logos-deals {
   text-align: center;
   margin-right: 60px;
@@ -2091,6 +2169,9 @@ hr.wad-line {
 }
 .footer-logos-deals p {
   font-size: 12px;
+}
+.footer-logo-deals-wrap {
+  display: flex;
 }
 
 .wad-footer-logo-content {
@@ -2197,9 +2278,13 @@ hr.wad-line {
   .footer-mob-dropdown {
     margin-left: 16px;
     padding: 0;
+    color: #e3bb59;
   }
   .footer-mob-dropdown > h4 {
     font-size: 1rem;
+  }
+  .footer-mob-a {
+    color: #e3bb59;
   }
   .footer-column-2 ul {
     padding-left: 0px !important;
@@ -2222,6 +2307,31 @@ hr.wad-line {
   }
   .mob-hide {
     display: none;
+  }
+  .footer-mob-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .footer-mob-spacing {
+    letter-spacing: 12px;
+  }
+  .footer-mob-logo-img {
+    width: 28px;
+    height: 28px;
+  }
+  .footer-mob-logo-img2 {
+    width: 52px;
+    height: 20px;
+  }
+  .footer-mob-logo-img3 {
+    width: 52px;
+    height: 16px;
+  }
+  .footer-mob-logo-img4 {
+    width: 52px;
+    height: 26px;
   }
   .subscribebox {
     width: 175px !important;
