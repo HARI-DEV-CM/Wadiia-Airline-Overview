@@ -77,8 +77,12 @@
     </div>
   </div>
   <div class="wad-bottom-mob">
+       <p>Flights > South Africa > Cape Town - Junnesburg</p>
   </div>
-  <div class="wad-row-button">
+  <div class="wad-mob-heading">
+    <h2>Book Cheap Mango Flights</h2>
+  </div>
+  <div class="wad-row-button" >
     <div class="wad-btn-container">
       <input type="hidden" id="hiddenbutton" value="Round-Trip">
       <div class="wad-column-button">
@@ -100,14 +104,14 @@
       <p>South Africa > </p>
     </div>&nbsp;
     <div class="wad-bc-row">
-      <p>Cape Town - Johannesburg</p>
+      <p>Cape Town - Junnesburg</p>
     </div>
   </div>
   <div class="wad-from">
     <br />
     <div class="wad-pageroutes">
       <div class="wad-routeheading">
-        <h1>Book flight to Johanessberg</h1>
+        <h1>Book Cheap Mango Flights</h1>
       </div>
     </div>
     <br />
@@ -131,7 +135,7 @@
           <input type="search2" id="arrival" placeholder=" " autocomplete="off">
           <span>Arrival To</span>
         </div>
-        <div>
+        <div class="wad-third-row">
           <div class="inputField date-search">
             <img src="./utils/images/calendar (1).svg" alt="" class="icon">
             <input type="search" id="departure-date" placeholder=" " autocomplete="off">&nbsp;
@@ -139,8 +143,7 @@
           </div>
           <div class="inputField date-search">
             <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
-            <input type="search" id="arrival-date" placeholder=" "
-              autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="search" id="arrival-date" placeholder=" " autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span id="spanarrival">Arrival Date</span>
           </div>
           <div class="inputField date-search">
@@ -150,8 +153,7 @@
           </div>
           <div class="inputField date-search">
             <img src="./utils/images/airplane.svg" alt="" class="icon">
-            <input type="search" placeholder=" " id="class" list="journeyclass" autocomplete="off"
-              onfocus="this.value=''" onchange="this.blur();">
+            <input type="search" placeholder=" " id="class" list="journeyclass"  autocomplete="off" onfocus="this.value=''" onchange="this.blur();">
             <span>Airline class</span>
             <datalist id="journeyclass">
               <option value="Business">
@@ -159,98 +161,16 @@
             </datalist>
           </div>
         </div>
-        <button class="wad-search-flight-btn-desktop" type="submit">
-          Search Flight
-        </button>
+        <div class="wad-search-flight-btn-desktop-div">
+          <button class="wad-search-flight-btn-desktop" type="submit">
+            Search Flight
+          </button>
+      </div>
       </form>
-
-      <div class="wad-qbox">
-        <p><object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
-        </p>
-        <ul class="wad-qbox-li">
-          <li>
-            We will always be there for you.
-          </li>
-          <li>
-            We provide the most bang for your bauck.
-          </li>
-          <li>
-            We work quickly to resolve travel issues.
-          </li>
-          <li>
-            We follow through on our promises and commitments.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-  <div class="wad-form-container-mob">
-    <form onsubmit="redirectMobURL(); getcmsmob(); return false">
-      <div class="wad-form-mob">
-        <div class="wad-form-tab row">
-          <div class="col-md-6">
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/route.svg" alt="" class="icon1">
-              <input class="wad-search-input" id="departure-mob" type="text" placeholder=" " autocomplete="off" required />
-              <span>Depart From</span>
-            </div>
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/route.svg" alt="" class="icon2">
-              <input class="wad-search-input" id="arrival-mob" type="text" placeholder=" " autocomplete="off" required />
-              <span>Arrival To</span>
-            </div>
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/group.svg" alt="" class="icon5">
-              <input class="wad-search-input" type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off"
-                required />
-              <span>No.of. Travellers</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/calendar (1).svg" alt="" class="icon3">
-              <input class="wad-search-input" id="departure-date-mob" type="text" placeholder=" " autocomplete="off"
-                required />
-              <span>Depart Date</span>
-            </div>
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/calendar (1).svg" alt="" class="icon4" id="arrival-icon-mob">
-              <input class="wad-search-input" id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required />
-              <span id="spanarrivalmob">Arrival Date</span>
-            </div>
-            <div class="wad-form-input inputField">
-              <img src="./utils/images/airplane.svg" alt="" class="icon6">
-              <input class="wad-search-input" type="text" id="class-mob" list="journeyclass-mob" placeholder=" "
-                autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required />
-              <span>Airline Class</span>
-              <datalist id="journeyclass-mob">
-                <option value="Business">
-                <option value="Economy">
-              </datalist>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="wad-form-sub-buttons">
-          <div>
-            <p>Non stop flights</p>
-          </div>
-          <div>
-            <p>Add another Traveller</p>
-          </div>
-        </div> -->
-      <button class="wad-search-flight-btn" onclick='redirectMobURL()'>
-        Search Flight
-      </button>
-    </form>
-    <div class="wad-form-details">
-      <div>
-        <p>
-          <object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
-        </p>
-        <div class="wad-form-ul">
+  
+        <div class="wad-qbox">
+          <p><object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
+          </p>
           <ul>
             <li>
               We will always be there for you.
@@ -267,8 +187,91 @@
           </ul>
         </div>
       </div>
+      
     </div>
-  </div>
+    <div class="wad-form-container-mob">
+    <form onsubmit="redirectMobURL(); getcmsmob(); return false">
+      <div class="wad-form-mob">
+        <div class="wad-form-tab row" >
+          <div class="col-md-6">
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/route.svg" alt="" class="icon1">
+              <input id="departure-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Depart From</span>
+            </div>
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/route.svg" alt="" class="icon2">
+              <input id="arrival-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Arrival To</span>
+            </div>
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/group.svg" alt="" class="icon5">
+              <input type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off" required/>
+              <span>No.of. Travellers</span>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/calendar (1).svg" alt="" class="icon3">
+              <input id="departure-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span>Depart Date</span>
+            </div>
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/calendar (1).svg" alt="" class="icon4" id="arrival-icon-mob">
+              <input id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required/>
+              <span id="spanarrivalmob">Arrival Date</span>
+            </div>
+            <div class="wad-form-input inputField">
+              <img src="./utils/images/airplane.svg" alt="" class="icon6">
+              <input type="text" id="class-mob" list="journeyclass-mob" placeholder=" " autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required/>
+              <span>Airline Class</span>
+            <datalist id="journeyclass-mob">
+              <option value="Business">
+              <option value="Economy">
+            </datalist>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- <div class="wad-form-sub-buttons">
+        <div>
+          <p>Non stop flights</p>
+        </div>
+        <div>
+          <p>Add another Traveller</p>
+        </div>
+      </div> -->
+      <button class="wad-search-flight-btn" onclick='redirectMobURL()'>
+        Search Flight
+      </button>
+    </form>
+      <div class="wad-form-details">
+        <div>
+          <p>
+            <object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
+          </p>
+          <div class="wad-form-ul">
+            <ul>
+              <li>
+                We will always be there for you.
+              </li>
+              <li>
+                We provide the most bang for your bauck.
+              </li>
+              <li>
+                We work quickly to resolve travel issues.
+              </li>
+              <li>
+                We follow through on our promises and commitments.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Header with Form section ends -->
+
   <div class="wad-content-container">
     <h2>Book Cheap Mango Flights & Specials</h2>
     <br />
