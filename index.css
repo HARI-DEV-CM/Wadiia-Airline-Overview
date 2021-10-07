@@ -26,6 +26,13 @@
   --borderbox-color: #274d83;
 }
 
+.main-title{
+  text-align: center;
+  color: #336699;
+  font-size: 32px;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 30px !important;
   color: #336699;
@@ -33,11 +40,28 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2,h3{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* h2 {
   font-size: 30px !important;
   color: #336699;
   font-weight: bold !important;
   text-align: center;
+} */
+
+
+
+p{
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.custom-container{
+  width: 90%;
+  margin: 0 auto;
 }
 
 body {
@@ -54,17 +78,52 @@ img {
     list-style-type: none;
   } */
 
-li {
+.footer-column ul li {
   font-size: 10px;
   margin-left: -30px;
 }
 
+#wd-breadcrumb{
+  background: #336699;
+  height: 40px;
+  padding: 8px 0;
+  font-size: 16px;
+}
+#wd-breadcrumb-mob{
+  background: #336699;
+  height: 40px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+#wd-breadcrumb ul, #wd-breadcrumb-mob ul{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+#wd-breadcrumb ul li, #wd-breadcrumb-mob ul li{
+  display: inline-block;
+  /* padding: 0 8px 0 0; */
+}
+#wd-breadcrumb a, #wd-breadcrumb-mob a{
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#wd-breadcrumb-mob {
+  display: none;
+}
+
 .wad-search-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 71px;
-  padding: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 94px;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
   /* border: 1px solid grey; */
 }
 
@@ -80,7 +139,7 @@ li {
 }
 
 .wad-column-head {
-  margin: 0 100px;
+  margin: 0px -20px 0px 252px;
   width: 35%;
   justify-content: space-between;
   display: flex;
@@ -124,9 +183,7 @@ li {
 }
 
 .wad-row-button {
-  margin-top: 18px !important;
-  margin: 40px 12%;
-  text-align: center;
+  display: none;
 }
 
 .wad-row-button:after {
@@ -159,10 +216,9 @@ select.account {
   background-color: var(--breadcrumb-box-color);
   padding: 28px 0px 13px 4.9vw;
   color: #ffffff;
-  margin-top: -30px;
 }
 
-.wad-bc-row p {
+.wad-breadcrumbs p {
   font-size: 16px;
 }
 
@@ -184,18 +240,20 @@ select.account {
 
 .wad-searchbox {
   display: flex;
+  width: 92%;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 
-.wad-searchbox > form{
+/* .wad-searchbox > form{
   margin-left: 4.9vw;
-}
+} */
 
 .wad-third-row {
   display: flex;
   justify-content: space-between;
-  width: 57vw;
+  width: 57.3vw;
 }
 
 .icon {
@@ -210,21 +268,22 @@ select.account {
 }
 
 .wad-qbox {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   float: right;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   padding: 10px 10px 13px 10px;
   border: solid 1px #6b86ab;
   border-radius: 5px;
   margin-left: 0;
   color: #336699;
   font-size: 20px;
-  margin-right: 4.9vw;
+  /* margin-right: 4.9vw; */
 }
 
 .wad-qbox p {
   font-size: 22px;
   font-weight: 500;
+  color: #336699 !important;
 }
 
 .wad-qbox ul {
@@ -506,13 +565,9 @@ input[type="submit"] {
   color: #336699;
   font-weight: 500;
 }
-.wad-bottom-mob{
-  display:none;
-}
-.wad-mob-heading{
+.wad-bottom-mob, .wad-mob-heading {
   display: none;
 }
-
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   h2 {
@@ -537,6 +592,7 @@ input[type="submit"] {
 
   .wad-column-button {
     margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     width: 33.33% !important;
     padding: 0;
@@ -552,7 +608,7 @@ input[type="submit"] {
     background-color: rgb(221, 247, 247);
     border: none;
     color: #255489;
-    padding: 10px 66px 10px 66px;
+    padding: 32px 66px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -626,8 +682,12 @@ input[type="submit"] {
     justify-content: center;
   }
 
+  /* .wad-bottom-mob {
+    background-color: #d4dfea;
+    padding: 3px;
+  } */
   .wad-bottom-mob {
-    display:block;
+    display: block;
     background-color:#336699;
     padding: 1px;
   }
@@ -639,15 +699,16 @@ input[type="submit"] {
     color:#dfe7ef;
   }
   .wad-mob-heading{
-    display:block;
+    display: block;
     margin-bottom: 12px;
     margin-top: 12px ;
   }
   .wad-mob-heading h2{
     font-size: 20px !important;
+    color: #336699;
+    font-weight: 600;
+    text-align: center;
   }
-  
-
   .inputField span {
     left: 175px !important;
   }
@@ -657,8 +718,12 @@ input[type="submit"] {
     left: 75px;
   }
 
-  .wad-breadcrumbs {
+  #wd-breadcrumb {
     display: none;
+  }
+
+  #wd-breadcrumb-mob {
+    display: block;
   }
 
   .wad-from {
@@ -666,7 +731,7 @@ input[type="submit"] {
   }
 
   .wad-pageroutes {
-    display: contents;
+    display: none;
   }
 
   .wad-form-container-mob {
@@ -726,6 +791,7 @@ input[type="submit"] {
   .wad-form-details p {
     margin-top: 20px;
     font-size: 22px;
+    color: #336699;
   }
 
   .wad-form-details li {
@@ -789,11 +855,11 @@ input[type="submit"] {
     padding-bottom: 0;
   }
 
-  input[type="text"] {
+  /* input[type="text"] {
     padding-left: 71px;
     outline: none;
     padding-bottom: 0;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 1001px) {
@@ -843,6 +909,7 @@ input[type="submit"] {
 
   .wad-column-button {
     margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     width: 33.33% !important;
     padding: 0;
@@ -858,7 +925,7 @@ input[type="submit"] {
     background-color: rgb(221, 247, 247);
     border: none;
     color: #255489;
-    padding: 10px 117px 10px 117px;
+    padding: 32px 117px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -895,6 +962,10 @@ input[type="submit"] {
     justify-content: center;
   }
 
+  /* .wad-bottom-mob {
+    background-color: #d4dfea;
+    padding: 3px;
+  } */
   .wad-bottom-mob {
     display: block;
     background-color:#336699;
@@ -903,19 +974,21 @@ input[type="submit"] {
   .wad-bottom-mob p {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 25px;
+    margin-left: 12px;
     font-size: 12px;
     color:#dfe7ef;
   }
   .wad-mob-heading{
-    display:block;
+    display: block;
     margin-bottom: 12px;
     margin-top: 12px ;
   }
   .wad-mob-heading h2{
     font-size: 20px !important;
+    color:#336699;
+    font-weight: 600;
+    text-align: center;
   }
-  
   .inputField span {
     left: 175px !important;
   }
@@ -925,8 +998,12 @@ input[type="submit"] {
     left: 75px;
   }
 
-  .wad-breadcrumbs {
+  #wd-breadcrumb {
     display: none;
+  }
+
+  #wd-breadcrumb-mob {
+    display: block;
   }
 
   .wad-from {
@@ -995,6 +1072,7 @@ input[type="submit"] {
   .wad-form-details p {
     margin-top: 20px;
     font-size: 22px;
+    color: #336699;
   }
 
   .wad-form-details li {
@@ -1063,6 +1141,7 @@ input[type="submit"] {
     outline: none;
     padding-bottom: 0;
   }
+  
 }
 
 @media only screen and (max-width: 480px) {
@@ -1081,6 +1160,7 @@ input[type="submit"] {
 
   .wad-row-button {
     margin: 40px 0;
+    text-align: center;
   }
 
   .wad-compare-button {
@@ -1148,7 +1228,7 @@ input[type="submit"] {
     display: flex;
     position: fixed;
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-top: 1rem;
     line-height: 3px;
     z-index: 100;
@@ -1303,7 +1383,7 @@ hr {
   width: 300px;
   height: 57px;
 }
-.wad-general-info-headings > h3 {
+.wad-general-info-headings h3 {
   color: black;
   padding-top: 45px;
   margin-left: -80px;
@@ -1339,6 +1419,7 @@ hr {
   line-height: 28px;
   padding-bottom: 0px;
   margin-left: -10px;
+  margin-top: 25px;
 }
 .wad-info-content p {
   font-size: 20px;
@@ -1366,10 +1447,8 @@ hr {
 }
 
 .wad-queries-info {
-  margin-top: 50px;
-  margin-left: 135px;
-  margin-right: 136px;
-  margin-bottom: -65px;
+  width: 90%;
+    margin: 0 auto;
 }
 .wad-queries-info button {
   background-color: #274d83;
@@ -1383,6 +1462,26 @@ hr {
 }
 .wad-start-mob {
   display: none;
+}
+.custom-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.common-content{
+  margin-top: 30px;
+}
+.common-content h3,.common-content h2{
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 0 16px;
+  text-align: left;
+}
+.common-content p{
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
@@ -1433,10 +1532,8 @@ hr {
     text-align: left;
   }
   .wad-queries-info {
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: -35px;
+    width: 90%;
+    margin: 0 auto;
   }
   .wad-general-info-container {
     background-color: #f6fafe;
@@ -1458,10 +1555,8 @@ hr {
 
 @media only screen and (max-width: 1024px) and (min-width: 1001px) {
   .wad-queries-info {
-    margin-top: 50px;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: -65px;
+    width: 90%;
+    margin: 0 auto;
   }
   .wad-general-info-container {
     width: 550px;
@@ -1483,16 +1578,14 @@ hr {
     margin-right: 0px;
   }
   .wad-queries-info {
-    margin-top: 0px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 0px;
+    width: 90%;
+    margin: 0 auto;
   }
   .wad-queries-info p {
     font-size: 14px;
   }
   .wad-queries-info h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .wad-info-headings {
     text-align: left;
@@ -1500,7 +1593,7 @@ hr {
     color: black;
     opacity: 1;
     width: 160px;
-    height: 45px;
+    height: 10px;
     /* background: #336699 0% 0% no-repeat padding-box; */
     opacity: 1;
     margin-left: 16px;
@@ -1550,10 +1643,17 @@ hr {
   padding-top: 40px;
 }
 
+.wad-top-mango-heading h2{
+  color:#336699;
+  font-weight: 600;
+  font-size: 30px;
+}
+
 .wad-mango-table-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .wad-mango-table-heading > p > object {
@@ -1703,116 +1803,102 @@ hr {
 
 /* Top airlines section starts */
 
-.wad-airlines-row {
-  margin: 40px 238px 0 238px;
-}
-.wad-airlines-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.wad-top-airlines-heading {
-  font-weight: bold;
-}
-.wad-top-airlines-content {
-  float: left;
-}
-.wad-airlines-column {
-  float: left;
-  width: 50%;
-  padding: 20px 50px;
-}
-/* .wad-airlines-inline-column{
-  margin-right: -1.5vw;
-} */
-.wad-airlines-column h3 {
-  font-size: 20px;
+.wd-other-airline h2{
+  text-align: center;
   color: #336699;
+  font-weight: 600;
+  font-size: 30px;
 }
-hr.wad-line {
-  border-top: 3px solid #0c6aec !important;
-  margin: 25px 0;
+.wd-other-airline{
+  padding: 56px 0 0px;
 }
-.wad-search-button {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 12px 30px;
+.wd-other-airline-list{
+  width: 892px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.wd-other-airline-list ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.wd-other-airline-list li{
+  display: inline-block;
+  min-width: 320px;
+  margin: 0 56px;
+  padding: 12px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.wd-other-airline-list li h4{
+  color: #336699;
+  font-weight: bold;
+  font-size: 20px;
+}
+.wd-btn-red,.wd-btn-red:hover{
+  background: #FF0000;
+  color: #fff;
+  height: 40px;
+  min-width: 148px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
-  margin: -8px 0px 0px 0px;
-  cursor: pointer;
+  padding: 8px 0;
   float: right;
 }
-.wad-airlines-column h3 {
-  font-size: 20px;
-  color: #336699;
+.wd-other-airline-list span{
+  display: inline-block;
 }
-.wad-airlines-column > p {
+.wd-other-airline-list span a{
   color: #336699;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  width: 160px;
+  padding: 8px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-  .wad-airlines-row {
-    margin: 40px 16px 0 16px;
+@media screen and (max-width: 580px){
+  .custom-container{
+    width: 92%;
   }
-  .wad-airlines-row > h2 {
-    margin-bottom: 40px;
+  h2,h3{
+    font-size: 20px;
+    line-height: 24px;
   }
-  .wad-airlines-column {
-    float: left;
-    width: 50%;
-    padding: 20px 4vw;
+  .wd-other-airline-list{
+    width: 100%;
   }
-  .wad-airlines-column > p {
-    font-size: 14px;
+  .wd-other-airline-list li{
+    display: block;
+    min-width: auto;
+    margin: 0;
   }
-  .wad-search-button {
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: -8px 0px 0px 0px;
-    cursor: pointer;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 1001px) {
-  .wad-airlines-row {
-    margin: 80px 50px 0 50px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  hr.wad-line {
-    margin: 18px 0;
-  }
-
-  .wad-airlines-row > .wad-airlines-column:nth-of-type(2) > h3 {
+  .wd-other-airline-list li:first-child{
     display: none;
   }
-  .wad-airlines-row {
-    margin: 40px 16px;
-  }
-  .wad-airlines-column {
-    float: none;
-    width: 100%;
-    padding: 0px 0px;
-    margin-top: 20px;
-  }
-  .wad-airlines-column > p {
+  .wd-other-airline-list span a{
     font-size: 14px;
   }
-  .wad-search-button {
-    padding: 10px 16px;
-    font-size: 12px;
-    margin-top: -4px;
+  .wd-btn-red{
+    font-size: 14px;
+  }
+  .wd-other-airline-list{
+    padding: 10px 0;
   }
 }
+
+@media screen and (min-width: 581px) and (max-width: 768px){
+  .wd-other-airline-list li {
+    margin: 0 12px;
+  }
+  .wd-other-airline-list{
+    width: 692px;
+  }
+}
+
 
 /* Top airlines section ends */
 
@@ -1824,6 +1910,12 @@ hr.wad-line {
 }
 .wad-faq-card-wrap {
   margin-top: 30px;
+}
+.wad-faq-card-wrap h2{
+  color:#336699;
+  font-size: 30px;
+  font-weight:600;
+  text-align: center;
 }
 .wad-faq-card-img {
   width: 35px !important;
@@ -2479,3 +2571,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 /* Extra input css ends */
+@media screen and (max-width: 580px){
+  .custom-container{
+    width: 92%;
+  }
+}
