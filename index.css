@@ -233,6 +233,9 @@ select.account {
   justify-content: center;
   align-items: center;
 }
+.wad-pageroutes h1{
+  margin: 22px 0;
+}
 
 .wad-pageroutes h2 {
   color: #336699;
@@ -403,12 +406,15 @@ select.account {
 .menu li {
   margin-top: 7rem;
   padding: 1rem;
-  text-align: center;
 }
 .menu li a {
   text-decoration: none;
   display: block;
   font-size: 35px;
+}
+.menu object{
+  margin-bottom: -10px;
+  padding-right: 10px;
 }
 
 .close {
@@ -823,12 +829,16 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1057,6 +1067,7 @@ input[type="submit"] {
     color: white;
     align-items: center;
     margin-left: 25px;
+    margin-top: 12px;
   }
 
   .wad-form-details {
@@ -1104,12 +1115,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1210,6 +1224,7 @@ input[type="submit"] {
   .wad-search-flight-btn {
     margin-left: 12px;
     /* margin-right: 14px; */
+    margin-top: 5px;
   }
 
   .wad-form-details > div > p > object {
@@ -1279,12 +1294,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 15px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -2391,6 +2409,12 @@ hr {
   .wad-ipad-footer5 {
     margin-top: 102px;
   }
+  .subscribebox_input{
+    padding-left: 24px !important;
+    padding-bottom: 12px !important;
+    width: 85% !important;
+
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 1001px) {
@@ -2487,6 +2511,10 @@ hr {
   }
   .subscribebox_input {
     padding-left: 20px !important;
+    padding-bottom: 12px !important;
+  }
+  .wad-footer-logo-content p{
+    font-size: 14px;
   }
 }
 
@@ -2509,6 +2537,9 @@ hr {
 
   .footer-logos-deals-details-mob {
     display: flex;
+  }
+  .wad-footer-logo-content p{
+    font-size: 16px;
   }
 }
 
