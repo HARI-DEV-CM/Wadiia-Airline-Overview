@@ -526,7 +526,7 @@ input[type="submit"] {
   background-color: red;
   border: none;
   padding: 14px 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
   color: white;
   align-items: center;
@@ -1464,7 +1464,7 @@ hr {
 .wad-mango-search-button-routes, .wad-mango-search-button-routes:hover {
   background-color: red;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: white;
   padding: 12px 38px;
   text-align: center;
@@ -1620,6 +1620,7 @@ hr {
   display: inline-block;
   padding: 8px 0;
   float: right;
+  border-radius: 6px;
 }
 .wd-other-airline-list span{
   display: inline-block;
