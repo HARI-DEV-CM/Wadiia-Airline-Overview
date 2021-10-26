@@ -749,9 +749,8 @@ input[type="submit"] {
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   h2 {
-    font-size: 20px !important;
     margin: auto 60px !important;
-    line-height: 27px !important;
+    /* line-height: 27px !important; */
   }
   .hamburger {
     display: flex;
@@ -1664,6 +1663,9 @@ hr {
   }
   .wd-other-airline-list{
     padding: 10px 0;
+  }
+  .wd-other-airline-list h4{
+    font-size: 18px !important;
   }
 }
 
